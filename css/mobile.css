@@ -1,3 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+  width: 100%;
+}
+header .logo {
+  object-fit: fill;
+  width: 240px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+header .emplacement {
+  width: 100%;
+  padding: 0.5em 0;
+  background-color: #bebebe;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+}
+main .explorer {
+  padding-top: 1em;
+  background-color: #F2F2F2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .explorer .titre {
+  font-size: x-large;
+  font-weight: 800;
+}
+main .explorer .sous-titre {
+  color: #bebebe;
+}
+main .explorer .boutton {
+  margin: 1.5em 0 3em 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  padding: 1em;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=mobile.css.map */

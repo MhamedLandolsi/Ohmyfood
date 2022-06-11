@@ -1,6 +1,55 @@
-$couleur1:#9356DC;
-$couleur2:#FF79DA;
-$couleur3:#99E2D0;
-$font1:'Roboto', sans-serif;
-$font2:'Shrikhand', cursive; 
+@import '_mixin', '_vars';
 
+
+body{
+    font-family: $font1;
+    @include centerListeFlex;
+}
+
+header{
+    @include centerListeFlex;
+    @include paddingBody;
+
+    width: 100%;
+    .logo{
+        object-fit: fill;
+        width: 240px;
+        margin-top: $garndMargin;
+        margin-bottom: $petitMargin;
+    }
+
+    .emplacement{
+        width: 100%;
+        padding: $petitMargin 0;
+        background-color: $couleurGrisFonce;
+        display: flex;
+        justify-content: center;
+    } 
+}
+main{
+    width: 100%;
+    .explorer{
+        padding-top: $standareMargin;
+        background-color: $couleurGris;
+        width: 100%;
+        @include centerListeFlex;
+
+        .titre{
+            font-size: x-large;
+            font-weight: 800;
+        }
+    
+        .sous-titre{
+            color: $couleurGrisFonce;
+        }
+
+        .boutton{
+            margin: $garndMargin 0  $garndMargin*2 0;
+            background: $couleurBoutton;
+            padding: $standareMargin;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
