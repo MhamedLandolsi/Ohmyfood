@@ -1,4 +1,27 @@
 @import '_vars';
-.margin-bottom-petit{
- margin-bottom: $petitMargin;
+
+.margin-bottom-petit {
+    margin-bottom: $petitMargin;
+}
+.margin-right-petit {
+    margin-right: $petitMargin;
+}
+
+.titre {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+
+.coeur {
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.coeur:hover {
+    font-weight: 800;
+    background: $couleurBoutton;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }
