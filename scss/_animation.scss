@@ -1,0 +1,60 @@
+@import 'vars';
+
+@keyframes augmenter-partie-droite {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: $widthSmallBloc;
+        opacity: 1;
+    }
+}
+
+@keyframes reduire-partie-droite {
+    0% {
+        width: $widthSmallBloc;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+@keyframes augmenter-partie-gauche {
+    0% {
+        width: calc(100% - $widthSmallBloc);
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes reduire-partie-gauche {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: calc(100% - $widthSmallBloc);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
