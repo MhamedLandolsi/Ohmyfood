@@ -236,6 +236,8 @@ footer .titre {
 .menu-page .retour {
   position: absolute;
   left: 10%;
+  text-decoration: unset;
+  color: black;
 }
 .menu-page .img-menu {
   object-fit: cover;
