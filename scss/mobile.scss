@@ -12,7 +12,7 @@ header {
     width: 100%;
 
     .logo {
-        object-fit: fill;
+        object-fit: cover;
         width: 240px;
         margin-top: $grandMargin;
         margin-bottom: $petitMargin;
@@ -130,7 +130,6 @@ main {
                     }
 
                     .info {
-                        z-index: 99;
                         margin-left: -5em;
                         margin-top: 1em;
                         background-color: $couleur3;

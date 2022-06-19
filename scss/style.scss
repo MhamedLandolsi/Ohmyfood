@@ -3,6 +3,7 @@
 .margin-bottom-petit {
     margin-bottom: $petitMargin;
 }
+
 .margin-right-petit {
     margin-right: $petitMargin;
 }
@@ -22,6 +23,36 @@
     font-weight: 800;
     background: $couleurBoutton;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: show 1s linear 0s 1 normal forwards;
+}
 
+
+.boutton {
+    box-shadow: 0 2px $couleurGrisFonce, 0 0 10px  $couleurGrisFonce;
+
+    &:hover{
+        box-shadow: 0 2px $couleurGrisFonce, 0 0 20px  $couleurGrisFonce; 
+        background: $couleurBouttonHover;   
+    }
+}
+
+.spinner {
+    display: block;
+    background-color: rgb(255, 255, 255, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+
+    animation: hide 0.01s linear 3s 1 normal forwards;
+    .cercle {
+        margin: 25% auto;
+        width: 100px;
+        height: 100px;
+        border: 10px solid $couleurGris;
+        border-radius: 70px;
+        border-top-color: $couleur3;
+        animation: spinner 1s linear 0s infinite normal forwards;
+    }
 }

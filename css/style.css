@@ -21,6 +21,34 @@
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: show 1s linear 0s 1 normal forwards;
+}
+
+.boutton {
+  box-shadow: 0 2px #bebebe, 0 0 10px #bebebe;
+}
+.boutton:hover {
+  box-shadow: 0 2px #bebebe, 0 0 20px #bebebe;
+  background: linear-gradient(170deg, #faabe3, #9356DC);
+}
+
+.spinner {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  animation: hide 0.01s linear 3s 1 normal forwards;
+}
+.spinner .cercle {
+  margin: 25% auto;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #F2F2F2;
+  border-radius: 70px;
+  border-top-color: #99E2D0;
+  animation: spinner 1s linear 0s infinite normal forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
