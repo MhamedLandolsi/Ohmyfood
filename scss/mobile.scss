@@ -1,4 +1,6 @@
+
 @import '_mixin', '_vars', 'animation';
+
 
 body {
     font-family: $font1;
@@ -326,12 +328,11 @@ footer {
 
 @for $j from 1 through 3 {
     .menu-elements:nth-of-type(#{$j}) {
-        animation: show 0.3s linear #{$delay + ($j)}s 1 normal forwards;
-
-        @for $i from 1 through 10 {
-            .element:nth-of-type(#{$i}) {
-                animation: show 0.3s linear #{$delay + ($j + $i * 0.1)}s 1 normal forwards;
-            }
-        }
+        animation: show 0.3s linear #{$delay + ($j * 0.3)}s 1 normal forwards;
     }
 }
+        @for $i from 1 through 10 {
+            .element:nth-of-type(#{$i}) {
+                animation: show 0.3s linear #{$delay + (1 + $i * 0.1)}s 1 normal forwards;
+            }
+        }
