@@ -1,6 +1,4 @@
-
 @import '_mixin', '_vars', 'animation';
-
 
 body {
     font-family: $font1;
@@ -73,13 +71,18 @@ main {
             margin-bottom: $grandMargin;
             margin-left: 10px;
             border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: $couleur2;
+            }
 
             .nombre {
                 padding: 2px 6px 2px 6px;
-                background-color: $couleur2;
                 border-radius: 20px;
                 color: white;
                 margin-left: -10px;
+                background-color: $couleur2;
             }
 
             .contenu {
@@ -89,10 +92,6 @@ main {
 
                 span {
                     margin-right: $standareMargin;
-                }
-
-                .span--couleur {
-                    color: $couleur2;
                 }
             }
         }
@@ -170,7 +169,8 @@ footer {
     background-color: #000000b0;
     color: white;
     padding-top: $grandMargin;
-    .item{
+
+    .item {
         text-decoration: unset;
         color: white;
     }
@@ -257,13 +257,13 @@ footer {
             align-items: stretch;
             cursor: pointer;
             text-overflow: ellipsis;
-            box-shadow: 0 2px $couleurGrisFonce, 0 0 20px  $couleurGrisFonce;
+            box-shadow: 0 2px $couleurGrisFonce, 0 0 20px $couleurGrisFonce;
 
             .titre {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                font-size: medium; 
+                font-size: medium;
             }
 
             .partie-gauche {
@@ -331,8 +331,9 @@ footer {
         animation: show 0.3s linear #{$delay + ($j * 0.3)}s 1 normal forwards;
     }
 }
-        @for $i from 1 through 10 {
-            .element:nth-of-type(#{$i}) {
-                animation: show 0.3s linear #{$delay + (1 + $i * 0.1)}s 1 normal forwards;
-            }
-        }
+
+@for $i from 1 through 10 {
+    .element:nth-of-type(#{$i}) {
+        animation: show 0.3s linear #{$delay + (1 + $i * 0.1)}s 1 normal forwards;
+    }
+}

@@ -132,13 +132,17 @@ main .fonctionement .bloc {
   margin-bottom: 1.5em;
   margin-left: 10px;
   border-radius: 20px;
+  cursor: pointer;
+}
+main .fonctionement .bloc:hover {
+  color: #9356DC;
 }
 main .fonctionement .bloc .nombre {
   padding: 2px 6px 2px 6px;
-  background-color: #9356DC;
   border-radius: 20px;
   color: white;
   margin-left: -10px;
+  background-color: #9356DC;
 }
 main .fonctionement .bloc .contenu {
   padding: 1.5em;
@@ -147,9 +151,6 @@ main .fonctionement .bloc .contenu {
 }
 main .fonctionement .bloc .contenu span {
   margin-right: 1em;
-}
-main .fonctionement .bloc .contenu .span--couleur {
-  color: #9356DC;
 }
 main .restaurant {
   display: flex;
